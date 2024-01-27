@@ -1,5 +1,5 @@
 # Deployed app link
-### Open `[Deployed Application Link]`(https://task-it-ashy.vercel.app/) to view it in your browser.
+### Open [Deployed Application Link](https://task-it-ashy.vercel.app/) to view it in your browser.
 
 # Things to expect
 1. The app will route to login page.
