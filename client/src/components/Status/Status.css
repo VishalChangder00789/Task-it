@@ -1,0 +1,35 @@
+.StatusContainer {
+  border: 1px solid rgba(118, 118, 118, 0.351);
+  border-radius: 18px;
+  width: 20%;
+  height: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(236, 236, 236, 0.763);
+  font-size: 7px;
+  font-weight: 700;
+  align-items: center;
+  position: relative;
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.464);
+}
+
+.StatusContainer_SwitchTab {
+  border-radius: 17px;
+  height: 25px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  background: greenyellow;
+  /* color: rgb(255, 0, 0); */
+  justify-content: center;
+  position: absolute;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.177);
+}
+
+.StatusContainer > input {
+  width: 20%;
+  border: none;
+  outline: none;
+}

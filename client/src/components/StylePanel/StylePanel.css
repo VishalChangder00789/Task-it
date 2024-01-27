@@ -1,0 +1,42 @@
+.StylePanelContainer {
+  /* border: 2px solid green; */
+  margin-top: 2%;
+  min-height: 40px;
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 2%;
+  align-items: center;
+}
+
+.StylePanelContainer_styles {
+  /* border: 2px solid rgb(51, 255, 0); */
+  height: 35px;
+  min-width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.StylePanelContainer_styles_button {
+  width: 30%;
+  height: 35px;
+  font-size: 14px;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.StylePanelContainer_styles_button :hover {
+  background: rgba(174, 174, 174, 0.138);
+  border-radius: 4px;
+}
+
+.StylePanelContainer_styles_button > button {
+  width: 50%;
+  height: 100%;
+  border: none;
+  background: none;
+  font-size: 16px;
+  font-weight: 400;
+}

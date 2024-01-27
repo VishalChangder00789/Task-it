@@ -1,0 +1,21 @@
+.TasksContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.BodyContainer {
+  min-height: 90vh;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.Footer {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  border-top: 2px solid rgba(128, 128, 128, 0.225);
+  position: relative;
+}

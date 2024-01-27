@@ -1,0 +1,26 @@
+.SearchContainer {
+  /* border: 2px solid red; */
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(206, 206, 206, 0.227);
+  border-radius: 7px;
+  padding-left: 2%;
+}
+
+.Search_searchIcon {
+  width: 4%;
+  height: 55%;
+  background: none;
+}
+
+.SearchContainer > input {
+  width: 90%;
+  height: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 18px;
+}

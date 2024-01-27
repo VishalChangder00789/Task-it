@@ -1,0 +1,28 @@
+.NavbarContainer {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3%;
+  padding-right: 3%;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.225);
+  position: sticky;
+  top: 0;
+  background: white;
+}
+
+.NavbarContainer_logo {
+  height: 60%;
+  width: 10%;
+}
+
+.NavbarContainer_search {
+  display: flex;
+  height: 60%;
+  width: 40%;
+}
+
+.NavbarContainer_settings {
+  height: 35%;
+  width: 2%;
+}

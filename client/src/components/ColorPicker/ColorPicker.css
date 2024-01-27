@@ -1,0 +1,42 @@
+.ColorPickerContainer {
+  /* border: 2px solid red; */
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.ColorPickerContainer :hover {
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px 1px rgba(43, 43, 43, 0.421);
+}
+
+.ColorPickerDropdown {
+  position: absolute;
+  top: 100%;
+  min-width: 650px;
+  padding: 50%;
+  display: flex;
+  background: white;
+  justify-content: space-between;
+  box-shadow: 1px 1px 5px 1px rgba(43, 43, 43, 0.421);
+}
+
+.ColorPickerContainer > img {
+  height: 80%;
+  width: 80%;
+}
+
+.ColorPickerDropdown_item {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.ColorPickerDropdown_item > div {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}

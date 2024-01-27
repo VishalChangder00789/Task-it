@@ -1,0 +1,43 @@
+.FontSelectorContainer {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  /* border: 2px solid red; */
+}
+
+.FontSelectorContainer :hover {
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px 1px rgba(43, 43, 43, 0.421);
+}
+
+.FontSelectorContainer > img {
+  height: 80%;
+  width: 90%;
+}
+
+.FontSelectorDropdown {
+  position: absolute;
+  top: 100%;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  box-shadow: 1px 1px 5px 1px rgba(43, 43, 43, 0.421);
+  font-weight: 500;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.FontSelectorDropdown_item {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

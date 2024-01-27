@@ -1,0 +1,32 @@
+.CreatedTaskContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  /* width: 80%; */
+  /* border: 2px solid rgb(157, 255, 0); */
+  min-height: 150px;
+}
+
+.CreatedTaskContainer_EmptyParent {
+  /* border: 2px solid rgb(0, 255, 8); */
+  width: 80%;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CreatedTaskContainer_Empty {
+  /* border: 2px solid red; */
+  /* height: 50%;
+  width: 30%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.CreatedTaskContainer_Empty > img {
+  height: 50%;
+  width: 50%;
+}
