@@ -6,43 +6,28 @@ import TaskContainer from "../../components/TaskContainer/TaskContainer";
 import axios from "axios";
 import { server_GetTaskUser } from "../../paths/serverPaths";
 import { getUserDetails } from "../../controller/localStorageController";
+import { useNavigate } from "react-router-dom";
 
 const Tasks = () => {
-  const details = [
-    {
-      title: "Title",
-      description: "Description",
-      bold: false,
-      italic: true,
-      underline: false,
-      fontSize: "14px",
-      color: "#f6e2dd",
-      pending: true,
-    },
-    {
-      title: "Title",
-      description: "Description",
-      bold: true,
-      italic: true,
-      underline: true,
-      fontSize: "18px",
-      color: "#b4ddd3",
-      pending: false,
-    },
-  ];
+  const navigate = useNavigate();
 
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
-    const { token, userId } = getUserDetails();
-    const getTasks = async () => {
-      const response = await axios.get(server_GetTaskUser(userId));
-      const tasks = response.data.data.tasklists;
-      console.log(tasks);
-      setTasks(tasks);
-    };
+    if (localStorage.userDetails) {
+      const { token, userId } = getUserDetails();
 
-    getTasks();
+      const getTasks = async () => {
+        const response = await axios.get(server_GetTaskUser(userId));
+        const tasks = response.data.data.tasklists;
+        console.log(tasks);
+        setTasks(tasks);
+      };
+
+      getTasks();
+    } else {
+      navigate("/login");
+    }
   }, []);
 
   return (
