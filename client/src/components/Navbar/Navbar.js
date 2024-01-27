@@ -15,9 +15,9 @@ const Navbar = () => {
       <div className="NavbarContainer_logo">
         <Applogo />
       </div>
-      <div className="NavbarContainer_search">
+      {/* <div className="NavbarContainer_search">
         <Search value={searchInput} setValue={setSearchInput} />
-      </div>
+      </div> */}
 
       <div className="NavbarContainer_settings">
         <Settings />
