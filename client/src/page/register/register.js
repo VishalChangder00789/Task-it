@@ -60,8 +60,13 @@ const Register = () => {
         confirmPassword,
       })
       .then((response) => {
-        let token = response.token;
-        let userId = response.data.newUser._id;
+        // let token = response.token;
+        // let userId = response.data.newUser._id;
+
+        console.log(response);
+
+        let token = response.data.token;
+        let userId = response.data.data.newUser._id;
 
         const details = {
           token,

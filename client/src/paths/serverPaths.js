@@ -1,5 +1,6 @@
 export const port = 5000;
-export const baseUrl = `http://localhost:${port}`;
+export const baseUrl_server = `http://localhost:${port}`;
+export const baseUrl = `https://task-it-backend.onrender.com`;
 export const server_login = `${baseUrl}/api/v1/login`;
 export const server_register = `${baseUrl}/api/v1/register`;
 
